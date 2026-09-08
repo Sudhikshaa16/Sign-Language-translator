@@ -1,0 +1,32 @@
+# data:
+#   folder: dataset/synthetic
+#   labels_file: dataset/labels.txt
+#   seq_len: 40
+
+# model:
+#   type: lstm   # options: lstm or transformer
+#   hidden: 128
+#   layers: 2
+#   d_model: 128
+
+# training:
+#   epochs: 12
+#   batch_size: 16
+#   lr: 0.0005
+
+
+data:
+  folder: dataset/raw/real        # your real webcam dataset
+  labels_file: dataset/labels.txt
+  seq_len: 1                      # because each .npy is a single frame
+
+model:
+  type: lstm
+  hidden: 128
+  layers: 2
+  d_model: 128
+
+training:
+  epochs: 12
+  batch_size: 16
+  lr: 0.0005
