@@ -134,7 +134,3 @@ dataset/
 └── synthetic/
 ```
 
-## Limitations
-
-This project is a prototype with a limited gesture vocabulary. Performance can vary depending on lighting, camera quality, hand position, and dataset diversity.
-
